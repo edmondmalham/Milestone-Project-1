@@ -2,25 +2,41 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <div id="game-wrapper">
+            <p id="current-score-wrapper">Score: <span id="current-score">0</span></p>
+
             <!-- Title Screen to introduce the user to the game -->
             <div id="title-screen" class="screen">
-
+                <h1>Food Trivia</h1>
+                <p>Welcome to Food Trivia, the fastest-growing trivia game in America!</p>
+                <button id="play-game-button" class="button">Play Game</button>
             </div>
 
             <!-- Separate screen where the user will play the game -->
             <div id="game-screen" class="screen">
-
+                <h1 id="round-title"></h1>
+                <p id="current-question"></p>
+                <div id="answer-choices-wrapper">
+                    <button id="answer-choice-1" class="button"></button>
+                    <button id="answer-choice-2" class="button"></button>
+                    <button id="answer-choice-3" class="button"></button>
+                </div>
+                <button id="next-question-button" class="button">Next Question</button>
             </div>
 
             <!-- Ending screen when the user finishes the game, asks to play again -->
             <div id="ending-screen" class="screen">
-
+                <h1>Congratulations!</h1>
+                <p>Thank you for playing Food Trivia. Your final score is:</p>
+                <h2 id="final-score"></h2>
+                <button id="play-again-button" class="button">Play Again</button>
             </div>
         </div>
+        <script src="js/ui-data.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
