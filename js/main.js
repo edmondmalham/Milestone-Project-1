@@ -63,9 +63,9 @@ function answerChoiceClicked(index) {
 function highlightAnswers(question) {
     for (let i = 0; i < 3; i++) {
         if (question.correctAnswerIndex === i) {
-            $(`#answer-choice-${i + 1}`).css("background-color", "green");
+            $(`#answer-choice-${i + 1}`).addClass("correct-answer");
         } else {
-            $(`#answer-choice-${i + 1}`).css("background-color", "red");
+            $(`#answer-choice-${i + 1}`).addClass("incorrect-answer");
         }
     }
 }
@@ -82,7 +82,8 @@ function loadQuestion(roundIndex, questionIndex) {
     $("#current-question").html(question.question);
     for (let i = 0; i < question.answers.length; i++) {
         $(`#answer-choice-${i + 1}`).html(question.answers[i]);
-        $(`#answer-choice-${i + 1}`).css("background-color", "white");
+        $(`#answer-choice-${i + 1}`).removeClass("correct-answer");
+        $(`#answer-choice-${i + 1}`).removeClass("incorrect-answer");
     }
     currentQuestionIndex = questionIndex;
 }

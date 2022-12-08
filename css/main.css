@@ -60,6 +60,16 @@ body {
     margin-top: 20px;
 }
 
+.correct-answer {
+    background-color: green !important;
+    color: white !important;
+}
+
+.incorrect-answer {
+    background-color: red !important;
+    color: white !important;
+}
+
 /* ================= End screen styles ================= */
 #ending-screen {
     display: none;
