@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    background-color: tan;
 }
 
 #current-score-wrapper {
@@ -24,6 +25,10 @@ body {
 
 .screen {
     text-align: center;
+    padding: 100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* ================= Title screen styles ================= */
