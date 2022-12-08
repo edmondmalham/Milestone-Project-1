@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    /* Background image from https://pxhere.com/en/photo/1641585 */
     background-image: url('../img/background.jpg');
     background-size: cover;
 }
