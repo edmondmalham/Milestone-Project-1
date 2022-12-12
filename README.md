@@ -8,7 +8,7 @@ There are three rounds. Each round will present the user with three food trivia 
 
 ## Technologies Used
 
-Aside from basic HTML, CSS, and JavaScript, the game additionally uses jQuery.
+Aside from basic HTML, CSS, and JavaScript, the game also uses jQuery.
 
 ## Future Feature Ideas
 
